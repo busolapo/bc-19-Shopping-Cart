@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>My Drag and Drop Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css" />
+
+</head>
+<body>
+  <script
+          src="https://code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous"></script>
+  <script src="jquery.ndd.js"></script>
+  <script src="index.js"></script>
+
+
+
+
+    <p id="demo">Hello</p>
+    <ul id="Products">
+      <li><a class="shoe" href="#" id="loubs" draggable="true">
+        <img src="https://images.pexels.com/photos/66856/women-s-shoes-red-pin-fashion-66856.jpeg?h=350&auto=compress&cs=tinysrgb" />
+        <div>
+          <p><strong>Louboutins</strong></p>
+          <p><strong>Price</strong>: <span>$65.00</span></p>
+          <p><strong>Quantity</strong>: <span>5</span></p>
+        </div>
+        </a></li>
+      <li><a class="shoe" href="#" id="stills" draggable="true">
+          <img src="https://static.jumia.com.ng/p/cape-robbin-3241-9387855-1-catalog_grid_3.jpg" />
+          <div>
+            <p><strong>Luxury Stilleto</strong></p>
+            <p><strong>Price</strong>: <span>$40.00</span></p>
+            <p><strong>Quantity</strong>: <span>3</span></p>
+          </div>
+          </a></li>
+      <li><a class="shoe" href="#" id="pumps" draggable="true">
+          <img src="https://static.jumia.com.ng/p/shoe-republic-la-3903-7931211-1-catalog_grid_3.jpg" />
+          <div>
+              <p><strong>Striped pumps</strong></p>
+              <p><strong>Price</strong>: <span>$20.00</span></p>
+              <p><strong>Quantity</strong>: <span>6</span></p>
+          </div>
+          </a></li>
+      <li><a class="shoe" href="#" id="sneaks" draggable="true">
+          <img src="https://static.jumia.com.ng/p/sport-5031-5461265-1-catalog_grid_3.jpg" />
+            <div>
+                <p><strong>Casual Sneakers</strong></p>
+                <p><strong>Price</strong>: <span>$6.00</span></p>
+                <p><strong>Quantity</strong>: <span>10</span></p>
+            </div>
+            </a></li>
+      <li><a class="shoe" href="#" id="flats" draggable="true">
+          <img src="https://static.jumia.com.ng/p/smart-leo-2036-8261265-1-catalog_grid_3.jpg" />
+          <div>
+              <p><strong>Bow Flats</strong></p>
+              <p><strong>Price</strong>: <span>$4.50</span></p>
+              <p><strong>Quantity</strong>: <span>3</span></p>
+          </div>
+          </a></li>
+      <li><a class="shoe" href="#" id="boots" draggable="true">
+          <img src="https://static.jumia.com.ng/p/bestelle-1280-9348655-1-catalog_grid_3.jpg" />
+          <div>
+              <p><strong>Rubber boots</strong></p>
+              <p><strong>Price</strong>: <span>$8.00</span></p>
+              <p><strong>Quantity</strong>: <span>1</span></p>
+          </div>
+          </a></li>
+      <li><a class="shoe" href="#" id="wedge" draggable="true">
+          <img src="https://static.jumia.com.ng/p/topway-2218-314891-1-catalog_grid_3.jpg" />
+          <div>
+              <p><strong>Wedge</strong></p>
+              <p><strong>Price</strong>: <span>$7.00</span></p>
+              <p><strong>Quantity</strong>: <span>2</span></p>
+          </div>
+          </a></li>
+      <li><a class="shoe" href="#" id="nude" draggable="true">
+          <img src="https://static.jumia.com.ng/p/qupid-0402-8889165-1-catalog_grid_3.jpg" />
+          <div>
+              <p><strong>Nude mid heels</strong></p>
+              <p><strong>Price</strong>: <span>$28.00</span></p>
+              <p><strong>Quantity</strong>: <span>4</span></p>
+          </div>
+          </a></li>
+      <li><a class="shoe" href="#" id="pointy" draggable="true">
+          <img src="https://static.jumia.com.ng/p/oasis-6262-5810855-1-catalog_grid_3.jpg" />
+          <div>
+              <p><strong>Pointed suede</strong></p>
+              <p><strong>Price</strong>: <span>$30.00</span></p>
+              <p><strong>Quantity</strong>: <span>1</span></p>
+          </div>
+          </a></li>
+      <li><a class="shoe" href="#" id="grey" draggable="true">
+          <img src="https://static.jumia.com.ng/p/top-moda-5020-2433265-1-catalog_grid_3.jpg" />
+          <div>
+              <p><strong>Metallic grey sneakers</strong></p>
+              <p><strong>Price</strong>: <span>$22.00</span></p>
+              <p><strong>Quantity</strong>: <span>8</span></p>
+          </div>
+          </a></li>
+      <li><a class="shoe" href="#" id="casual" draggable="true">
+          <img src="https://static.jumia.com.ng/p/blowfish-2156-7442555-1-catalog_grid_3.jpg" />
+          <div>
+              <p><strong>Casual flats</strong></p>
+              <p><strong>Price</strong>: <span>$15.00</span></p>
+              <p><strong>Quantity</strong>: <span>3</span></p>
+          </div>
+          </a></li>
+      <li><a class="shoe" href="#" id="metallic" draggable="true">
+          <img src="https://static.jumia.com.ng/p/anne-michelle-5077-7753265-1-catalog_grid_3.jpg" />
+          <div>
+            <p><strong>Dórsay heels</strong></p>
+            <p><strong>Price</strong>: <span>$52.00</span></p>
+            <p><strong>Quantity</strong>: <span>1</span></p>
+          </div>
+          </a></li>
+    </ul>
+    <div id="cart">
+      <h1>Shopping Cart</h1>
+      <ul></ul>
+      <p id="total"><strong>Total:</strong> $<span>0.00</span></p>
+      <hr /><h2>Drop here to add to cart</h2>
+    </div>
+</body>
+</html>

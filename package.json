@@ -1,0 +1,14 @@
+{
+  "name": "myshoppingcart",
+  "version": "1.0.0",
+  "description": "A drag and drop shopping cart",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Olubusola Agboola",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.15.3"
+  }
+}
