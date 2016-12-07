@@ -59,7 +59,7 @@ $(document).ready(function(){
           remQuantEl = $('p:last span', shoe);
           remQuant = parseInt(remQuantEl.text(), 10) - 1;
           remQuantEl.text(remQuant);
-          quantBoughtEl = ('.quantity', prevCartItem);
+          quantBoughtEl = $('.quantity', prevCartItem);
           quantBoughtEl.text(parseInt(quantBoughtEl.text(), 10) + 1);
 
           if(remQuant === 0){
