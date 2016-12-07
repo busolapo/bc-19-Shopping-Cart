@@ -42,17 +42,21 @@ $(document).ready(function(){
           $('h2').fadeOut('fast');
 
           if(notInCart){
-            prevCartItem = $('<li />', {
-              text : $('p:first', shoe).text(),
-              data : { id : id}
-            }).prepend($('<span />', {
+             prevCartItem = $('<li draggable="true" />', {
+               
+            }).append($('<span />', {
                 'class' : 'quantity',
                  text : '0'
             }))
-              .prepend($('<span />', {
+              .append($('<span />', {
+                'class' : '.shoe',
+                 text : $('p:first', shoe).text()
+              }))
+              .append($('<span />', {
                 'class' : 'price',
                  text : price
-              })).appendTo(cartList);
+              }))
+              .appendTo(cartList)
             }
 
 
@@ -71,6 +75,12 @@ $(document).ready(function(){
 
           evt.stopPropagation();
           return false;
-    });
+    })
+  
+      $('#cart').on('dragleave', function(){
+      console.log("I am leaving")
+      
+
+    })
 
   })
